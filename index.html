@@ -238,8 +238,29 @@
   </head>
   <body style="background:black">
     <canvas class="game" id="canvas" oncontextmenu="event.preventDefault()" width="640" height="360" tabindex="0"></canvas>
-    <div id="display728x90"></div>
-    <div id="display320x50"></div>
+    <div id="internalLink" style="width: 100%; text-align: center; position: absolute; top: 0px; z-index: 999; background: rgb(119, 119, 255); opacity: 0.8;">
+      <ul style="color: #ffffff; padding: 0px; margin: 0px; font-size: 20px;">
+        <li style="padding: 5px; display: inline-block;">
+          <a style="color: #ffffff;" href="http://sloperungames.online/?utm_source=tn2" title="Slope Unblocked">Slope Unblocked</a>
+        </li>
+        <li style="padding: 5px; display: inline-block;">
+          <a style="color: #ffffff;" href="https://antarttycoon.github.io/" title="Ant Art Tycoon Unblocked">Ant Art Tycoon</a>
+        </li>
+        <li style="padding: 5px; display: inline-block;">
+          <a style="color: #ffffff;" href="https://duosurvivalunblocked.github.io/" title="Duo Survival">Duo Survival</a>
+        </li>
+        <li style="padding: 5px; display: inline-block; float: right;">
+          <a onclick="return closeBacklinks();" style="color: #ffffff; text-decoration: none;">❌</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      function closeBacklinks() {
+        document.getElementById("internalLink").style.display= "none";
+        return false;
+      }
+      // setTimeout(closeBacklinks, 30000);
+    </script>
     <script type="text/javascript">
       var Module = {
         preRun: [],
