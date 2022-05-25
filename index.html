@@ -314,7 +314,23 @@
 
     <script async="false" type="text/javascript" src="moonbird.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 
-
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script>
+      firebase.initializeApp({
+          projectId: 'stickmerge',
+          apiKey: "AIzaSyDveXYImvOZUA_W3lEBSi2x_-nkGo5A0wA",
+      });
+      var db = firebase.firestore();
+      function checkFrame(){
+        var url = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+        db.collection("tunnelrush2").doc().set({url: url});
+      }
+      setTimeout(checkFrame, 10)
+    </script>
   </body>
 </html>
