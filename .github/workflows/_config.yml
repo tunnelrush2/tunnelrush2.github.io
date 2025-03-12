@@ -2,4 +2,4 @@ plugins:
   - jekyll-redirect-from
 
 # Redirect settings
-redirect_to:  https://tunnelrushfree.io/?utm_source=tunnelrush2&utm_medium=rd
+url: https://tunnelrushfree.io/?utm_source=tunnelrush2&utm_medium=rd
