@@ -1,0 +1,15 @@
+plugins:
+  - jekyll-redirect-from
+
+# Site settings
+title: Tunnel Rush 2
+description: Tunnel Rush 2 is a skill game where you ride fast into colorful 3D tunnels
+url: https://tunnelrushfree.io?utm_source=tunnelrush2&utm_medium=rd # Replace with your new domain
+baseurl: ""
+
+# GitHub Pages settings
+github:
+  is_project_page: false
+
+# Redirect settings
+redirect_to:  https://tunnelrushfree.io/?utm_source=tunnelrush2&utm_medium=rd
